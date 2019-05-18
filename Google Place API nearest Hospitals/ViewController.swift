@@ -65,7 +65,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         googleMapView.settings.myLocationButton = true
         
         if nextPageReady == false {
-             let url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(latitude),\(longitude)&radius=10000&sensor=true&keyword=hospital&key=AIzaSyA66KYm28Lt85ZvTX6wGAu-Cgco0fvKBFk"
+             let url = "Write API here"
             
             Alamofire.request(url, method: .get).responseJSON {
                 response in
@@ -94,7 +94,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         }
         
         if self.nextPageReady == true {
-            let nextPageUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?pagetoken=\(self.nextPageToken)&key=AIzaSyA66KYm28Lt85ZvTX6wGAu-Cgco0fvKBFk"
+            let nextPageUrl = "Next Token API HERE"
             
             Alamofire.request(nextPageUrl, method: .get).responseJSON {
                 response in
