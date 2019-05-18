@@ -1,0 +1,6 @@
+framework module Pods_Google_Place_API_nearest_Hospitals {
+  umbrella header "Pods-Google Place API nearest Hospitals-umbrella.h"
+
+  export *
+  module * { export * }
+}
